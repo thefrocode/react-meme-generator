@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  font-family: "Karla", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  background-color: #672280;
   display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.nav--logo{
+  height: 26px;
+  margin-right: 12px;
+}
+
+.nav--title{
+  font-size: 21px;
+  color: white;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.nav--desc{
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+}
+main {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1em;
+}
+
+.meme--grid{
+  display: grid;
+  grid-template-rows: 40px 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.form--button{
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #672280;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.form--input{
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+.meme--section{
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme--image{
+  max-width: 100px;
 }
