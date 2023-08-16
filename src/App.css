@@ -63,5 +63,38 @@ main {
 }
 
 .meme--image{
-  max-width: 100px;
+ width: 100%;
+}
+
+
+.meme{
+  margin-top: 1em;
+  width: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.meme--text{
+  position: absolute;
+  
+
+}
+
+.top{
+  position: absolute;
+  color: white;
+  font-size: 3em;
+  top: 0.5em;
+  z-index: 1;
+
+}
+.bottom{
+  position: absolute;
+  color: white;
+  font-size: 3em;
+  bottom: 0.5em;
+  z-index: 1;
 }
